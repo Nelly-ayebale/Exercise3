@@ -15,7 +15,7 @@ public class InputOutputOperations {
 
         System.out.print("Enter your second number: ");
         secondNumberAyebale= Float.parseFloat(br.readLine());
-        System.out.println("");
+        //System.out.println("");
 
         sum = firstNumberAyebale + secondNumberAyebale;
         subtraction = firstNumberAyebale - secondNumberAyebale;
