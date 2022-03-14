@@ -12,7 +12,7 @@ public class QuadraticCalculator {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
         System.out.println("This program calculates the roots of the equation ax^2+bx+c = 0");
-        System.out.println("Enter the value of a");
+        System.out.print("Enter the value of a: ");
         a = Double.parseDouble(br.readLine());
 
         if(a==0){
@@ -30,13 +30,13 @@ public class QuadraticCalculator {
 
             switch (rootsNumber) {
                 case 0:
-                    System.out.println("No roots");
+                    System.out.println("No roots.");
                 case 1:{
                     x1 = -b / (2 * a);
                     System.out.printf("a = " + "%4.2f,", a);
                     System.out.printf("b = " + "%4.2f,", b);
                     System.out.printf("c = " + "%4.2f,", c);
-                    System.out.printf("There's one root, x1 = " + "%4.2f,", x1);
+                    System.out.printf("There is only one root, x1 = " + "%4.2f,", x1);
                 }break;
                 case 2:{
                     x1=(-b-sqrt(delta))/(2*a);
@@ -44,7 +44,7 @@ public class QuadraticCalculator {
                     System.out.printf("a = " + "%4.2f,",a);
                     System.out.printf("b = " + "%4.2f,",b);
                     System.out.printf("c = " + "%4.2f,",c);
-                    System.out.printf("There are two roots, x1 = " + "%4.2f,", x1 + " x2 = " + "%4.2f,", x2);
+                    System.out.printf(" There are two roots, x1 = " + "%4.2f,", x1 + " x2 = " + "%4.2f,", x2);
                 }break;
             }
         }
